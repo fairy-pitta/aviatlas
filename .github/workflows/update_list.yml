@@ -1,0 +1,29 @@
+name: Sync SG Birds Daily
+
+on:
+  schedule:
+    - cron: "50 15 * * *"  
+  workflow_dispatch:   
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Supabase sync script
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          EBIRD_API_KEY: ${{ secrets.EBIRD_API_KEY }}
+        run: python script/update_sgbird.py

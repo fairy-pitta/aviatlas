@@ -1,7 +1,0 @@
-services:
-  - type: cron
-    name: update-sgbird
-    schedule: "0 0 * * *" 
-    runtime: python
-    buildCommand: ""
-    startCommand: "python script/ObservationSG.py"
