@@ -5,10 +5,3 @@ services:
     runtime: python
     buildCommand: ""
     startCommand: "python script/ObservationSG.py"
-    envVars:
-      - key: SUPABASE_URL
-        value: https://nuspbbfhxkkdsasowabl.supabase.co
-      - key: SUPABASE_SERVICE_ROLE_KEY
-        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im51c3BiYmZoeGtrZHNhc293YWJsIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0NjcxNjYzMywiZXhwIjoyMDYyMjkyNjMzfQ.nWO3IoyPGP-54c7-aA1BGyX8lgD5C4P8x4mJJeQHpag
-      - key: EBIRD_API_KEY
-        value: 5ik656tjh2us
