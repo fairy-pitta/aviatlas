@@ -26,4 +26,4 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           EBIRD_API_KEY: ${{ secrets.EBIRD_API_KEY }}
-        run: python script/SBBird.py
+        run: python scripts/SBBird.py
