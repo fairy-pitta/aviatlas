@@ -21,9 +21,16 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run Supabase sync script
+      - name: Run Observation Sync script
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           EBIRD_API_KEY: ${{ secrets.EBIRD_API_KEY }}
         run: python scripts/ObservationSG.py
+        
+      - name: Run SGBird Sync script
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          EBIRD_API_KEY: ${{ secrets.EBIRD_API_KEY }}
+        run: python scripts/SGBird.py

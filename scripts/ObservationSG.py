@@ -18,7 +18,7 @@ csv_path = os.path.join(os.path.dirname(__file__), "..", "data", "eBird_taxonomy
 taxonomy_df = pd.read_csv(csv_path)
 
 # 再開ファイル
-progress_path = os.path.join(os.path.dirname(__file__), "last_successful_date.txt")
+progress_path = os.path.join(os.path.dirname(__file__), "..", "last_successful_date.txt")
 def get_start_date(default="2010-01-09"):
     if os.path.exists(progress_path):
         with open(progress_path, "r") as f:

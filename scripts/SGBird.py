@@ -14,7 +14,10 @@ SUPABASE_KEY = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
 
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
+
+
 def fetch_species_codes_from_ebird():
+    """eBird APIからシンガポールの鳥のリストを取得する"""
     url = "https://api.ebird.org/v2/product/spplist/SG"
     headers = {"X-eBirdApiToken": API_KEY}
     response = requests.get(url, headers=headers)
