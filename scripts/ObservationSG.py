@@ -19,7 +19,7 @@ taxonomy_df = pd.read_csv(csv_path)
 
 # 再開ファイル
 progress_path = os.path.join(os.path.dirname(__file__), "last_successful_date.txt")
-def get_start_date(default="2010-01-09"):
+def get_start_date(default="2025-05-11"):
     if os.path.exists(progress_path):
         with open(progress_path, "r") as f:
             return datetime.strptime(f.read().strip(), "%Y-%m-%d")
