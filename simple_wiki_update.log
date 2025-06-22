@@ -4408,3 +4408,34 @@ Batch 1 Summary:
 2025-06-22 14:03:45,887 - INFO -   1257: Pterodroma gouldi
 2025-06-22 14:03:47,602 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.d10f4fd2-e94d-4508-b94c-b055337a7fa5 "HTTP/2 200 OK"
 2025-06-22 14:03:47,602 - INFO -     ✓ Updated
+2025-06-22 14:03:48,103 - INFO -   1258: Pterodroma neglecta
+2025-06-22 14:03:48,446 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.3dbff6c4-d213-4629-8731-84cf23beff59 "HTTP/2 200 OK"
+2025-06-22 14:03:48,447 - INFO -     ✓ Updated
+2025-06-22 14:03:48,948 - INFO -   1259: Pterodroma magentae
+2025-06-22 14:03:52,178 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.913cc998-be12-4e7f-b230-d96551ca34ed "HTTP/2 200 OK"
+2025-06-22 14:03:52,179 - INFO -     ✓ Updated
+2025-06-22 14:03:52,682 - INFO -   1260: Pterodroma arminjoniana
+2025-06-22 14:03:54,219 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.6fc83a07-2535-4e9b-892c-bdb37d8c25d5 "HTTP/2 200 OK"
+2025-06-22 14:03:54,219 - INFO -     ✓ Updated
+2025-06-22 14:03:54,720 - INFO -   1261: Pterodroma heraldica
+2025-06-22 14:03:56,450 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.c809222e-489d-410d-bf61-fc8acce2ac18 "HTTP/2 200 OK"
+2025-06-22 14:03:56,450 - INFO -     ✓ Updated
+2025-06-22 14:03:56,951 - INFO -   1262: Pterodroma ultima
+2025-06-22 14:03:58,442 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.c3265f8d-00a8-46f5-83b1-f8950e7769ea "HTTP/2 200 OK"
+2025-06-22 14:03:58,443 - INFO -     ✓ Updated
+2025-06-22 14:03:58,946 - INFO -   1263: Pterodroma solandri
+2025-06-22 14:04:00,322 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.491f1ade-90f5-4f95-9ce2-dce1d5408925 "HTTP/2 200 OK"
+2025-06-22 14:04:00,323 - INFO -     ✓ Updated
+2025-06-22 14:04:00,828 - INFO -   1264: Pterodroma atrata
+2025-06-22 14:04:02,398 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.221a85d2-8ea9-4b1d-b942-440d29109ba7 "HTTP/2 200 OK"
+2025-06-22 14:04:02,400 - INFO -     ✓ Updated
+2025-06-22 14:04:02,903 - INFO -   1265: Pterodroma madeira
+2025-06-22 14:04:04,545 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.87db8e3b-462d-4e0e-8902-e9a1ecfb1e80 "HTTP/2 200 OK"
+2025-06-22 14:04:04,547 - INFO -     ✓ Updated
+2025-06-22 14:04:05,052 - INFO -   1266: Pterodroma feae
+2025-06-22 14:04:05,411 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.d4c1c48e-de68-40a7-862c-1b7a3353981f "HTTP/2 200 OK"
+2025-06-22 14:04:05,413 - INFO -     ✓ Updated
+2025-06-22 14:04:05,918 - INFO -   1267: Pterodroma mollis
+2025-06-22 14:04:06,257 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.f40f8c0a-b374-4de5-8c09-a14965892750 "HTTP/2 200 OK"
+2025-06-22 14:04:06,257 - INFO -     ✓ Updated
+2025-06-22 14:04:06,766 - INFO -   1268: Pterodroma baraui
