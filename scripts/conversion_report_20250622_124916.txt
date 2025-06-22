@@ -1,0 +1,36 @@
+============================================================
+EBIRD TO SUPABASE CONVERSION SUMMARY
+============================================================
+Start time: 2025-06-22 12:49:16.672840
+End time: 2025-06-22 12:49:16.833405
+Duration: 0.16 seconds
+
+PROCESSING STATISTICS:
+  Total CSV rows: 17,415
+  Processed species: 11,145
+  Created nodes: 13,820
+  Skipped rows: 6,270
+
+NODE BREAKDOWN:
+  Class: 1
+  Order: 46
+  Family: 254
+  Genus: 2,374
+  Species: 11,145
+
+ERRORS: 135
+  - Row 116: Invalid scientific name format: Anser anser (Domestic type)
+  - Row 120: Invalid scientific name format: Anser cygnoides (Domestic type)
+  - Row 142: Invalid scientific name format: Anser sp. (Domestic type)
+  - Row 148: Invalid scientific name format: Branta bernicla (Gray-bellied)
+  - Row 223: Invalid scientific name format: Chloephaga picta (White-breasted)
+  - Row 224: Invalid scientific name format: Chloephaga picta (Bar-breasted)
+  - Row 230: Invalid scientific name format: Anatidae (goose sp.)
+  - Row 250: Invalid scientific name format: Tachyeres brachypterus (Flightless)
+  - Row 251: Invalid scientific name format: Tachyeres brachypterus (Flying)
+  - Row 257: Invalid scientific name format: Cairina moschata (Domestic type)
+  ... and 125 more
+
+WARNINGS: 0
+
+============================================================

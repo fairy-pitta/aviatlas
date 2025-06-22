@@ -1,0 +1,63 @@
+2025-06-22 13:12:56,299 - INFO - Starting Wikipedia and image update process (dry_run=True)
+2025-06-22 13:12:56,299 - INFO - Found 2 species to process
+2025-06-22 13:12:56,299 - INFO - Processing 1/2: Corvus corax
+2025-06-22 13:12:56,548 - INFO - [DRY RUN] Would update species sample-1 with:
+2025-06-22 13:12:56,548 - INFO -   Wikipedia URL: https://en.wikipedia.org/wiki/Common_raven
+2025-06-22 13:12:56,548 - INFO -   Image URL: https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Corvus_corax_ad_berlin_090516.jpg/330px-Corvus_corax_ad_berlin_090516.jpg
+2025-06-22 13:12:56,548 - INFO - Processing 2/2: Passer domesticus
+2025-06-22 13:12:57,015 - INFO - [DRY RUN] Would update species sample-2 with:
+2025-06-22 13:12:57,016 - INFO -   Wikipedia URL: https://en.wikipedia.org/wiki/House_sparrow
+2025-06-22 13:12:57,016 - INFO -   Image URL: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/House_sparrow_male_in_Prospect_Park_%2853532%29.jpg/330px-House_sparrow_male_in_Prospect_Park_%2853532%29.jpg
+2025-06-22 13:12:57,016 - INFO - 
+============================================================
+2025-06-22 13:12:57,016 - INFO - WIKIPEDIA AND IMAGE UPDATE SUMMARY
+2025-06-22 13:12:57,016 - INFO - ============================================================
+2025-06-22 13:12:57,016 - INFO - Total processed: 2
+2025-06-22 13:12:57,016 - INFO - Wikipedia URLs found: 2
+2025-06-22 13:12:57,016 - INFO - Image URLs found: 2
+2025-06-22 13:12:57,016 - INFO - Errors: 0
+2025-06-22 13:12:57,016 - INFO - Skipped: 0
+2025-06-22 13:12:57,016 - INFO - ============================================================
+2025-06-22 13:13:03,204 - INFO - Starting Wikipedia and image update process (dry_run=False)
+2025-06-22 13:13:03,894 - INFO - HTTP Request: GET https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?select=id%2Cscientific_name%2Ccommon_name%2Crank%2Cwikipedia_url%2Cimage_url&rank=eq.species&wikipedia_url=is.null&limit=10 "HTTP/2 200 OK"
+2025-06-22 13:13:03,900 - INFO - Found 10 species to process
+2025-06-22 13:13:03,900 - INFO - Processing 1/10: Struthio camelus
+2025-06-22 13:13:04,478 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.21b1d038-d2f4-4e71-a244-85613ba58697 "HTTP/2 200 OK"
+2025-06-22 13:13:04,479 - INFO - Updated species 21b1d038-d2f4-4e71-a244-85613ba58697
+2025-06-22 13:13:04,480 - INFO - Processing 2/10: Struthio molybdophanes
+2025-06-22 13:13:06,192 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.46aefb92-9b93-4893-b5c6-228d2d70a733 "HTTP/2 200 OK"
+2025-06-22 13:13:06,194 - INFO - Updated species 46aefb92-9b93-4893-b5c6-228d2d70a733
+2025-06-22 13:13:06,194 - INFO - Processing 3/10: Casuarius casuarius
+2025-06-22 13:13:06,739 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.a02cd708-088e-4361-addb-2da591d3c233 "HTTP/2 200 OK"
+2025-06-22 13:13:06,739 - INFO - Updated species a02cd708-088e-4361-addb-2da591d3c233
+2025-06-22 13:13:06,740 - INFO - Processing 4/10: Casuarius bennetti
+2025-06-22 13:13:08,193 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.90be2c09-4d04-4e26-8eb2-38908cc0729b "HTTP/2 200 OK"
+2025-06-22 13:13:08,194 - INFO - Updated species 90be2c09-4d04-4e26-8eb2-38908cc0729b
+2025-06-22 13:13:08,194 - INFO - Processing 5/10: Casuarius unappendiculatus
+2025-06-22 13:13:09,347 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.315b4c5c-89d5-4df8-9c7d-31a438988a84 "HTTP/2 200 OK"
+2025-06-22 13:13:09,349 - INFO - Updated species 315b4c5c-89d5-4df8-9c7d-31a438988a84
+2025-06-22 13:13:09,349 - INFO - Processing 6/10: Dromaius novaehollandiae
+2025-06-22 13:13:09,891 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.90dbfea1-c7d0-44ff-bce0-5dc8d7dfe77f "HTTP/2 200 OK"
+2025-06-22 13:13:09,892 - INFO - Updated species 90dbfea1-c7d0-44ff-bce0-5dc8d7dfe77f
+2025-06-22 13:13:09,892 - INFO - Processing 7/10: Apteryx australis
+2025-06-22 13:13:10,425 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.15a1c1b2-11e7-4dd4-9ae9-10172b6072f2 "HTTP/2 200 OK"
+2025-06-22 13:13:10,425 - INFO - Updated species 15a1c1b2-11e7-4dd4-9ae9-10172b6072f2
+2025-06-22 13:13:10,425 - INFO - Processing 8/10: Apteryx rowi
+2025-06-22 13:13:10,971 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.daeea326-cdfa-4739-b45b-6e1e0083ea35 "HTTP/2 200 OK"
+2025-06-22 13:13:10,971 - INFO - Updated species daeea326-cdfa-4739-b45b-6e1e0083ea35
+2025-06-22 13:13:10,972 - INFO - Processing 9/10: Apteryx mantelli
+2025-06-22 13:13:12,256 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.e6290c18-f305-4db9-9551-79a0eb135118 "HTTP/2 200 OK"
+2025-06-22 13:13:12,257 - INFO - Updated species e6290c18-f305-4db9-9551-79a0eb135118
+2025-06-22 13:13:12,257 - INFO - Processing 10/10: Apteryx owenii
+2025-06-22 13:13:13,929 - INFO - HTTP Request: PATCH https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?id=eq.db32eaeb-28a1-4978-b73d-a4e608d63af9 "HTTP/2 200 OK"
+2025-06-22 13:13:13,930 - INFO - Updated species db32eaeb-28a1-4978-b73d-a4e608d63af9
+2025-06-22 13:13:13,930 - INFO - 
+============================================================
+2025-06-22 13:13:13,931 - INFO - WIKIPEDIA AND IMAGE UPDATE SUMMARY
+2025-06-22 13:13:13,931 - INFO - ============================================================
+2025-06-22 13:13:13,931 - INFO - Total processed: 10
+2025-06-22 13:13:13,931 - INFO - Wikipedia URLs found: 10
+2025-06-22 13:13:13,931 - INFO - Image URLs found: 10
+2025-06-22 13:13:13,931 - INFO - Errors: 0
+2025-06-22 13:13:13,931 - INFO - Skipped: 0
+2025-06-22 13:13:13,932 - INFO - ============================================================

@@ -1,0 +1,64 @@
+2025-06-22 13:14:43,271 - INFO - Starting batch Wikipedia and image update (dry_run=True)
+2025-06-22 13:14:43,271 - INFO - Batch size: 10, Max workers: 3
+2025-06-22 13:14:43,271 - INFO - Processing batch 1 with 10 species
+2025-06-22 13:14:50,629 - INFO - [DRY RUN] Would update 3 species
+2025-06-22 13:14:50,629 - INFO -   sample-2: Wiki=True, Image=True
+2025-06-22 13:14:50,629 - INFO -   sample-4: Wiki=True, Image=True
+2025-06-22 13:14:50,630 - INFO -   sample-3: Wiki=True, Image=True
+2025-06-22 13:14:50,630 - INFO - Batch 1: 3 species updated
+2025-06-22 13:14:50,630 - INFO - Progress: 10 species processed
+2025-06-22 13:14:51,635 - INFO - Processing batch 2 with 10 species
+2025-06-22 13:15:04,927 - INFO - Progress: 20 species processed
+2025-06-22 13:15:05,928 - INFO - Reached processing limit of 20
+2025-06-22 13:15:05,928 - INFO - 
+============================================================
+2025-06-22 13:15:05,928 - INFO - BATCH WIKIPEDIA AND IMAGE UPDATE SUMMARY
+2025-06-22 13:15:05,928 - INFO - ============================================================
+2025-06-22 13:15:05,928 - INFO - Total processed: 20
+2025-06-22 13:15:05,928 - INFO - Wikipedia URLs found: 3
+2025-06-22 13:15:05,929 - INFO - Image URLs found: 3
+2025-06-22 13:15:05,929 - INFO - Errors: 0
+2025-06-22 13:15:05,929 - INFO - Skipped: 0
+2025-06-22 13:15:05,929 - INFO - Duration: 22.66 seconds
+2025-06-22 13:15:05,929 - INFO - Rate: 0.9 species/second
+2025-06-22 13:15:05,929 - INFO - ============================================================
+2025-06-22 13:15:10,866 - INFO - Starting batch Wikipedia and image update (dry_run=False)
+2025-06-22 13:15:10,866 - INFO - Batch size: 25, Max workers: 4
+2025-06-22 13:15:11,551 - INFO - HTTP Request: GET https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?select=id%2Cscientific_name%2Ccommon_name%2Crank%2Cwikipedia_url%2Cimage_url&rank=eq.species&wikipedia_url=is.null&offset=0&limit=25 "HTTP/2 200 OK"
+2025-06-22 13:15:11,555 - INFO - Processing batch 1 with 25 species
+2025-06-22 13:15:20,343 - INFO - HTTP Request: POST https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?on_conflict=id&columns=%22wikipedia_url%22%2C%22id%22%2C%22image_url%22%2C%22updated_at%22 "HTTP/2 400 Bad Request"
+2025-06-22 13:15:20,345 - ERROR - Error updating species batch: {'message': 'null value in column "name" of relation "bird_taxonomy" violates not-null constraint', 'code': '23502', 'hint': None, 'details': "Failing row contains (fb8e92e5-35e8-462a-b37a-f530527a3dd9, null, null, null, null, null, null, https://en.wikipedia.org/wiki/Darwin's_rhea, https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Pteroc..., null, null, null, 2025-06-22 05:15:20.324564+00, 2025-06-22 05:15:20.324564+00)."}
+2025-06-22 13:15:20,345 - INFO - Batch 1: 0 species updated
+2025-06-22 13:15:20,345 - INFO - Progress: 25 species processed
+2025-06-22 13:15:21,671 - INFO - HTTP Request: GET https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?select=id%2Cscientific_name%2Ccommon_name%2Crank%2Cwikipedia_url%2Cimage_url&rank=eq.species&wikipedia_url=is.null&offset=25&limit=25 "HTTP/2 200 OK"
+2025-06-22 13:15:21,674 - INFO - Processing batch 2 with 25 species
+2025-06-22 13:15:27,748 - INFO - HTTP Request: POST https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?on_conflict=id&columns=%22wikipedia_url%22%2C%22id%22%2C%22image_url%22%2C%22updated_at%22 "HTTP/2 400 Bad Request"
+2025-06-22 13:15:27,749 - ERROR - Error updating species batch: {'message': 'null value in column "name" of relation "bird_taxonomy" violates not-null constraint', 'code': '23502', 'hint': None, 'details': 'Failing row contains (2c7f3030-a515-4881-b906-9acd74d46502, null, null, null, null, null, null, https://en.wikipedia.org/wiki/Thicket_tinamou, https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cryptu..., null, null, null, 2025-06-22 05:15:27.740305+00, 2025-06-22 05:15:27.740305+00).'}
+2025-06-22 13:15:27,749 - INFO - Batch 2: 0 species updated
+2025-06-22 13:15:27,749 - INFO - Progress: 50 species processed
+2025-06-22 13:15:29,086 - INFO - HTTP Request: GET https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?select=id%2Cscientific_name%2Ccommon_name%2Crank%2Cwikipedia_url%2Cimage_url&rank=eq.species&wikipedia_url=is.null&offset=50&limit=25 "HTTP/2 200 OK"
+2025-06-22 13:15:29,087 - INFO - Processing batch 3 with 25 species
+2025-06-22 13:15:35,265 - INFO - HTTP Request: POST https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?on_conflict=id&columns=%22wikipedia_url%22%2C%22id%22%2C%22image_url%22%2C%22updated_at%22 "HTTP/2 400 Bad Request"
+2025-06-22 13:15:35,266 - ERROR - Error updating species batch: {'message': 'null value in column "name" of relation "bird_taxonomy" violates not-null constraint', 'code': '23502', 'hint': None, 'details': 'Failing row contains (510511be-5305-4b68-abdd-206fe4709d79, null, null, null, null, null, null, https://en.wikipedia.org/wiki/Southern_screamer, https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Southe..., null, null, null, 2025-06-22 05:15:35.253006+00, 2025-06-22 05:15:35.253006+00).'}
+2025-06-22 13:15:35,266 - INFO - Batch 3: 0 species updated
+2025-06-22 13:15:35,266 - INFO - Progress: 75 species processed
+2025-06-22 13:15:36,600 - INFO - HTTP Request: GET https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?select=id%2Cscientific_name%2Ccommon_name%2Crank%2Cwikipedia_url%2Cimage_url&rank=eq.species&wikipedia_url=is.null&offset=75&limit=25 "HTTP/2 200 OK"
+2025-06-22 13:15:36,601 - INFO - Processing batch 4 with 25 species
+2025-06-22 13:15:43,027 - INFO - HTTP Request: POST https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?on_conflict=id&columns=%22wikipedia_url%22%2C%22id%22%2C%22image_url%22%2C%22updated_at%22 "HTTP/2 400 Bad Request"
+2025-06-22 13:15:43,028 - ERROR - Error updating species batch: {'message': 'null value in column "name" of relation "bird_taxonomy" violates not-null constraint', 'code': '23502', 'hint': None, 'details': 'Failing row contains (ad6af8ab-f5f3-4ca4-ac2f-09814efe990e, null, null, null, null, null, null, https://en.wikipedia.org/wiki/Cackling_goose, https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Aleuti..., null, null, null, 2025-06-22 05:15:43.017641+00, 2025-06-22 05:15:43.017641+00).'}
+2025-06-22 13:15:43,028 - INFO - Batch 4: 0 species updated
+2025-06-22 13:15:43,028 - INFO - Progress: 100 species processed
+2025-06-22 13:15:44,156 - INFO - HTTP Request: GET https://nuspbbfhxkkdsasowabl.supabase.co/rest/v1/bird_taxonomy?select=id%2Cscientific_name%2Ccommon_name%2Crank%2Cwikipedia_url%2Cimage_url&rank=eq.species&wikipedia_url=is.null&offset=100&limit=25 "HTTP/2 200 OK"
+2025-06-22 13:15:44,159 - INFO - Reached processing limit of 100
+2025-06-22 13:15:44,159 - INFO - 
+============================================================
+2025-06-22 13:15:44,160 - INFO - BATCH WIKIPEDIA AND IMAGE UPDATE SUMMARY
+2025-06-22 13:15:44,160 - INFO - ============================================================
+2025-06-22 13:15:44,160 - INFO - Total processed: 100
+2025-06-22 13:15:44,160 - INFO - Wikipedia URLs found: 100
+2025-06-22 13:15:44,160 - INFO - Image URLs found: 100
+2025-06-22 13:15:44,160 - INFO - Errors: 100
+2025-06-22 13:15:44,160 - INFO - Skipped: 0
+2025-06-22 13:15:44,160 - INFO - Duration: 33.29 seconds
+2025-06-22 13:15:44,160 - INFO - Rate: 3.0 species/second
+2025-06-22 13:15:44,160 - INFO - ============================================================
